@@ -1,6 +1,11 @@
 ﻿using Dokio.Contracts.ILoggerService;
+using Dokio.Contracts.IRepositoryWrapper;
+using Dokio.Entities.Context;
 using Dokio.LoggerService;
+using Dokio.Repository.RepositoryWrapper;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
@@ -34,6 +39,18 @@ namespace Dokio.api.ServiceExtentions
         public static void  ConfigureLoggerService(this IServiceCollection services)
         {
             services.AddSingleton<ILoggerManager, LoggerManager>();
+        }
+
+        public static void ConfigureMySqlContext (this IServiceCollection services, IConfiguration config)
+        {
+            var connectionString = config["mysqlconnection:connectionString-Dev"]; //Dev environment
+            //var connectionString = config["mysqlconnection:connectionString-Prod"]; //Prod environment
+            services.AddDbContext<RepositoryContext>(o => o.UseMySql(connectionString));
+        }
+
+        public static void ConfigureRepositoryWrapper(this IServiceCollection services)
+        {
+            services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
         }
     }
 }

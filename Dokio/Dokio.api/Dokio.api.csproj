@@ -14,7 +14,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Dokio.Contracts\Dokio.Contracts.csproj" />
+    <ProjectReference Include="..\Dokio.Entities\Dokio.Entities.csproj" />
     <ProjectReference Include="..\Dokio.LoggerService\Dokio.LoggerService.csproj" />
+    <ProjectReference Include="..\Dokio.Repository\Dokio.Repository.csproj" />
   </ItemGroup>
 
 </Project>

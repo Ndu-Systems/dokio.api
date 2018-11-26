@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dokio.Contracts", "Dokio.Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dokio.LoggerService", "Dokio.LoggerService\Dokio.LoggerService.csproj", "{DB988B2C-029E-4F66-BAA0-831E5E60CC2C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dokio.Repository", "Dokio.Repository\Dokio.Repository.csproj", "{F58A32F7-F7BC-413E-AD29-862EA0F9415E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dokio.Entities", "Dokio.Entities\Dokio.Entities.csproj", "{D57E48F5-56CA-4F1F-8855-C341E18CB8B0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{DB988B2C-029E-4F66-BAA0-831E5E60CC2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB988B2C-029E-4F66-BAA0-831E5E60CC2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB988B2C-029E-4F66-BAA0-831E5E60CC2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F58A32F7-F7BC-413E-AD29-862EA0F9415E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F58A32F7-F7BC-413E-AD29-862EA0F9415E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F58A32F7-F7BC-413E-AD29-862EA0F9415E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F58A32F7-F7BC-413E-AD29-862EA0F9415E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D57E48F5-56CA-4F1F-8855-C341E18CB8B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D57E48F5-56CA-4F1F-8855-C341E18CB8B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D57E48F5-56CA-4F1F-8855-C341E18CB8B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D57E48F5-56CA-4F1F-8855-C341E18CB8B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

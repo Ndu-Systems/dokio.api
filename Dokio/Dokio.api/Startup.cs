@@ -33,6 +33,8 @@ namespace Dokio.api
             services.ConfigureCors();
             services.ConfigureIISIntegration();
             services.ConfigureLoggerService();
+            services.ConfigureMySqlContext(Configuration);
+            services.ConfigureRepositoryWrapper();
             services.AddMvc();
         }
 
@@ -67,7 +69,7 @@ namespace Dokio.api
             });
 
             app.UseStaticFiles();
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
             app.UseMvc(routes => {
                 routes.MapRoute("default", "{controller=Home}/{action=Index}/{id?}");
             });

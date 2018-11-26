@@ -1,0 +1,12 @@
+C:\Users\User\source\repos\dokio.api\Dokio\Dokio.Contracts\bin\Debug\netcoreapp2.1\Dokio.Contracts.deps.json
+C:\Users\User\source\repos\dokio.api\Dokio\Dokio.Contracts\bin\Debug\netcoreapp2.1\Dokio.Contracts.dll
+C:\Users\User\source\repos\dokio.api\Dokio\Dokio.Contracts\bin\Debug\netcoreapp2.1\Dokio.Contracts.pdb
+C:\Users\User\source\repos\dokio.api\Dokio\Dokio.Contracts\bin\Debug\netcoreapp2.1\Dokio.Entities.dll
+C:\Users\User\source\repos\dokio.api\Dokio\Dokio.Contracts\bin\Debug\netcoreapp2.1\Dokio.Entities.pdb
+C:\Users\User\source\repos\dokio.api\Dokio\Dokio.Contracts\obj\Debug\netcoreapp2.1\Dokio.Contracts.csprojAssemblyReference.cache
+C:\Users\User\source\repos\dokio.api\Dokio\Dokio.Contracts\obj\Debug\netcoreapp2.1\Dokio.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\dokio.api\Dokio\Dokio.Contracts\obj\Debug\netcoreapp2.1\Dokio.Contracts.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\dokio.api\Dokio\Dokio.Contracts\obj\Debug\netcoreapp2.1\Dokio.Contracts.AssemblyInfo.cs
+C:\Users\User\source\repos\dokio.api\Dokio\Dokio.Contracts\obj\Debug\netcoreapp2.1\Dokio.Contracts.csproj.CopyComplete
+C:\Users\User\source\repos\dokio.api\Dokio\Dokio.Contracts\obj\Debug\netcoreapp2.1\Dokio.Contracts.dll
+C:\Users\User\source\repos\dokio.api\Dokio\Dokio.Contracts\obj\Debug\netcoreapp2.1\Dokio.Contracts.pdb

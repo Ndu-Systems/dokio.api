@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Dokio.Contracts.ILoggerService;
+using Dokio.Contracts.IRepositoryWrapper;
+using Dokio.Entities.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Dokio.api.Controllers
@@ -12,17 +14,27 @@ namespace Dokio.api.Controllers
     public class ValuesController : ControllerBase
     {
         private ILoggerManager _logger;
-
-        public ValuesController(ILoggerManager logger)
+        private IRepositoryWrapper _repoWrapper;
+        public ValuesController(ILoggerManager logger, IRepositoryWrapper repoWrapper)
         {
             _logger = logger;
+            _repoWrapper = repoWrapper;
         }
         // GET api/values
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        public IEnumerable<Patient> Get()
         {
-            _logger.LogInfo("Here is info message from our values controller.");
-            return new string[] { "value1", "value2" };
+
+            var patients = _repoWrapper.Patient.GetAllPatients();
+
+            if(patients != null)
+            {
+                _logger.LogInfo("Patients recieved");
+            }
+           
+            //return new string[] { "value1", "value2" };
+            return patients;
+       
         }
 
         // GET api/values/5

@@ -1,0 +1,14 @@
+C:\Users\User\source\repos\dokio.api\Dokio\Dokio.LoggerService\bin\Debug\netcoreapp2.1\Dokio.LoggerService.deps.json
+C:\Users\User\source\repos\dokio.api\Dokio\Dokio.LoggerService\bin\Debug\netcoreapp2.1\Dokio.LoggerService.dll
+C:\Users\User\source\repos\dokio.api\Dokio\Dokio.LoggerService\bin\Debug\netcoreapp2.1\Dokio.LoggerService.pdb
+C:\Users\User\source\repos\dokio.api\Dokio\Dokio.LoggerService\bin\Debug\netcoreapp2.1\Dokio.Contracts.dll
+C:\Users\User\source\repos\dokio.api\Dokio\Dokio.LoggerService\bin\Debug\netcoreapp2.1\Dokio.Entities.dll
+C:\Users\User\source\repos\dokio.api\Dokio\Dokio.LoggerService\bin\Debug\netcoreapp2.1\Dokio.Contracts.pdb
+C:\Users\User\source\repos\dokio.api\Dokio\Dokio.LoggerService\bin\Debug\netcoreapp2.1\Dokio.Entities.pdb
+C:\Users\User\source\repos\dokio.api\Dokio\Dokio.LoggerService\obj\Debug\netcoreapp2.1\Dokio.LoggerService.csprojAssemblyReference.cache
+C:\Users\User\source\repos\dokio.api\Dokio\Dokio.LoggerService\obj\Debug\netcoreapp2.1\Dokio.LoggerService.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\dokio.api\Dokio\Dokio.LoggerService\obj\Debug\netcoreapp2.1\Dokio.LoggerService.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\dokio.api\Dokio\Dokio.LoggerService\obj\Debug\netcoreapp2.1\Dokio.LoggerService.AssemblyInfo.cs
+C:\Users\User\source\repos\dokio.api\Dokio\Dokio.LoggerService\obj\Debug\netcoreapp2.1\Dokio.LoggerService.csproj.CopyComplete
+C:\Users\User\source\repos\dokio.api\Dokio\Dokio.LoggerService\obj\Debug\netcoreapp2.1\Dokio.LoggerService.dll
+C:\Users\User\source\repos\dokio.api\Dokio\Dokio.LoggerService\obj\Debug\netcoreapp2.1\Dokio.LoggerService.pdb
