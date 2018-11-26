@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2016
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dokio.api", "Dokio.api\Dokio.api.csproj", "{CDC9DB02-4730-4677-BEF3-15B4EBA91CCD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dokio.Contracts", "Dokio.Contracts\Dokio.Contracts.csproj", "{ABBA14CF-5F68-4788-BD61-F3424E1B091D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dokio.LoggerService", "Dokio.LoggerService\Dokio.LoggerService.csproj", "{DB988B2C-029E-4F66-BAA0-831E5E60CC2C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CDC9DB02-4730-4677-BEF3-15B4EBA91CCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDC9DB02-4730-4677-BEF3-15B4EBA91CCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDC9DB02-4730-4677-BEF3-15B4EBA91CCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDC9DB02-4730-4677-BEF3-15B4EBA91CCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABBA14CF-5F68-4788-BD61-F3424E1B091D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABBA14CF-5F68-4788-BD61-F3424E1B091D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABBA14CF-5F68-4788-BD61-F3424E1B091D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABBA14CF-5F68-4788-BD61-F3424E1B091D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB988B2C-029E-4F66-BAA0-831E5E60CC2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB988B2C-029E-4F66-BAA0-831E5E60CC2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB988B2C-029E-4F66-BAA0-831E5E60CC2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB988B2C-029E-4F66-BAA0-831E5E60CC2C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3696CBCA-34FC-4FAB-A9DC-8C2E1AD6AD44}
+	EndGlobalSection
+EndGlobal
