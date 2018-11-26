@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Dokio.Contracts.ILoggerService;
 using Dokio.Contracts.IRepositoryWrapper;
+using Dokio.Entities.Extensions;
 using Dokio.Entities.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -23,7 +24,7 @@ namespace Dokio.api.Controllers
             _repoWrapper = repoWrapper;
         }
 
-        // GET api/values
+        // GET api/patients
         [HttpGet]
         public IActionResult GetAllPatients ()
         {
@@ -39,6 +40,58 @@ namespace Dokio.api.Controllers
                 return StatusCode(500, "Internal server error");
             }         
 
+        }
+
+        // GET api/patients/1
+
+        [HttpGet("{id}", Name ="PatientById")]
+        public IActionResult GetPatientById(int id)
+        {
+            try
+            {
+                var patient = _repoWrapper.Patient.GetPatientById(id);
+                if (patient.IsEmptyObject())
+                {
+                    _logger.LogError($"Patient with id: {id}, has not been found in our records");
+                    return NotFound();
+                }
+                else
+                {
+                    _logger.LogInfo($"Returned Patient with id : {id}");
+                    return Ok(patient);
+                }
+            }
+            catch(Exception ex)
+            {
+                _logger.LogError($"Something went wrong inside GetPatientById error: {ex.Message}");
+                return StatusCode(500, "Internal server error");
+            }
+        }
+
+        [HttpPost]
+        public IActionResult CreatePatient([FromBody]Patient patient)
+        {
+            try
+            {
+                if (patient.IsObjectNull())
+                {
+                    _logger.LogError("Patient object sent from CreatePatient is Null");
+                    return BadRequest("Object null");
+                }
+                if (!ModelState.IsValid)
+                {
+                    _logger.LogError("Invalid Patient Object sent from CreatePatient");
+                    return BadRequest("Object invalid");
+                }
+                _repoWrapper.Patient.CreatePatient(patient);
+                return CreatedAtRoute("PatientById", new { id = patient.Id }, patient);
+                
+            }
+            catch(Exception ex)
+            {
+                _logger.LogError($"Something went wrong inside CreatePatient error: {ex.Message}");
+                return StatusCode(500, "Internal server error");
+            }
         }
     }
 }

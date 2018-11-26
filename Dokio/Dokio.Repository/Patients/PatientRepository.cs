@@ -19,6 +19,9 @@ namespace Dokio.Repository.Patients
         public bool CreatePatient(Patient model)
         {
             bool isDone = false;
+            model.CreateDate = DateTime.Now;
+            model.ModifyDate = DateTime.Now;
+            model.GlobalKey =  Guid.NewGuid().ToString();
             try
             {
                 Create(model);
