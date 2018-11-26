@@ -1,0 +1,1 @@
+2018-11-26 16:02:49.1681 INFO Returned all patients from database at: 2018/11/26 4:02:45 PM

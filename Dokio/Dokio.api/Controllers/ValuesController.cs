@@ -27,10 +27,9 @@ namespace Dokio.api.Controllers
 
             var patients = _repoWrapper.Patient.GetAllPatients();
 
-            if(patients != null)
-            {
-                _logger.LogInfo("Patients recieved");
-            }
+          
+            _logger.LogInfo("Patients recieved");
+            
            
             //return new string[] { "value1", "value2" };
             return patients;
