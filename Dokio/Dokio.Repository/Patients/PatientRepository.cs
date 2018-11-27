@@ -57,6 +57,7 @@ namespace Dokio.Repository.Patients
                 dbPatient.Map(patient);
                 Update(dbPatient);
                 Save();
+                isDone = true;
             }
             catch (Exception ex)
             {

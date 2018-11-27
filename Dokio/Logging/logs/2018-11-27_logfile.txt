@@ -1,0 +1,1 @@
+2018-11-27 11:20:29.4017 INFO Returned all patients from database at: 2018/11/27 11:20:29 AM

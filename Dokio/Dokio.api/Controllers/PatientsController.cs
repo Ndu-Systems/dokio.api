@@ -93,5 +93,34 @@ namespace Dokio.api.Controllers
                 return StatusCode(500, "Internal server error");
             }
         }
+
+        [HttpPut("{id}")]
+        public IActionResult UpdatePatient(int id, [FromBody]Patient patient)
+        {
+            try
+            {
+                if (patient.IsObjectNull())
+                {
+                    _logger.LogError("Patient object sent from UpdatePatient is Null");
+                    return BadRequest("Object null");
+                }
+                if (!ModelState.IsValid)
+                {
+                    _logger.LogError("Invalid Patient Object sent from UpdatePatient");
+                    return BadRequest("Object invalid");
+                }
+
+                var dbPatient = _repoWrapper.Patient.GetPatientById(id);
+
+                _repoWrapper.Patient.UpdateClient(dbPatient,patient);
+                return NoContent();
+
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"Something went wrong inside CreatePatient error: {ex.Message}");
+                return StatusCode(500, "Internal server error");
+            }
+        }
     }
 }

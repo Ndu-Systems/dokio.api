@@ -977,3 +977,329 @@ File name: 'NLog.Extended, Culture=neutral, PublicKeyToken=null'
 2018-11-26 16:40:46.5875 Debug FileTarget(Name=logfile): Process file 'C:/Users/User/source/repos/dokio.api/Dokio/Logging/logs/2018-11-26_logfile.txt' on startup
 2018-11-26 16:40:46.6000 Debug Creating file appender: C:/Users/User/source/repos/dokio.api/Dokio/Logging/logs/2018-11-26_logfile.txt
 2018-11-26 16:40:46.6000 Trace Opening C:/Users/User/source/repos/dokio.api/Dokio/Logging/logs/2018-11-26_logfile.txt with allowFileSharedWriting=False
+2018-11-27 11:12:17.9112 Debug ScanAssembly('NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2018-11-27 11:12:18.0122 Debug Found assembly location directory: 'C:\Users\User\.nuget\packages\nlog\4.5.10\lib\netstandard2.0' (NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c)
+2018-11-27 11:12:18.0122 Debug Search for auto loading files in location: C:\Users\User\.nuget\packages\nlog\4.5.10\lib\netstandard2.0
+2018-11-27 11:12:18.0324 Debug Found assembly location directory: 'C:\Users\User\source\repos\dokio.api\Dokio\Dokio.api\bin\Debug\netcoreapp2.1' (Dokio.api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)
+2018-11-27 11:12:18.0324 Debug Search for auto loading files in location: C:\Users\User\source\repos\dokio.api\Dokio\Dokio.api\bin\Debug\netcoreapp2.1
+2018-11-27 11:12:18.0324 Debug Auto loading based on AppDomain-BaseDirectory found location: C:\Users\User\source\repos\dokio.api\Dokio\Dokio.api\bin\Debug\netcoreapp2.1
+2018-11-27 11:12:18.0324 Debug Search for auto loading files in location: C:\Users\User\source\repos\dokio.api\Dokio\Dokio.api\bin\Debug\netcoreapp2.1
+2018-11-27 11:12:18.0324 Debug Start auto loading, location: C:\Users\User\.nuget\packages\nlog\4.5.10\lib\netstandard2.0
+2018-11-27 11:12:18.0324 Trace Assembly 'Microsoft.Extensions.Logging, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60' will be hidden in callsite stacktrace
+2018-11-27 11:12:18.0324 Trace Assembly 'Microsoft.Extensions.Logging.Abstractions, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60' will be hidden in callsite stacktrace
+2018-11-27 11:12:18.0426 Debug Auto loading done
+2018-11-27 11:12:18.0426 Info Message Template Auto Format enabled
+2018-11-27 11:12:18.0426 Info Loading assembly: NLog.Extended
+2018-11-27 11:12:18.1030 Error Error loading extensions. Exception: System.IO.FileNotFoundException: Could not load file or assembly 'NLog.Extended, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'NLog.Extended, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, StackCrawlMark& stackMark, IntPtr pPrivHostBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, StackCrawlMark& stackMark)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Internal.AssemblyHelpers.LoadFromName(String assemblyName)
+   at NLog.Config.XmlLoggingConfiguration.ParseExtensionWithAssembly(String assemblyName, String prefix)
+
+
+2018-11-27 11:12:18.1054 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: NLog.Extended ---> System.IO.FileNotFoundException: Could not load file or assembly 'NLog.Extended, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, StackCrawlMark& stackMark, IntPtr pPrivHostBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, StackCrawlMark& stackMark)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Internal.AssemblyHelpers.LoadFromName(String assemblyName)
+   at NLog.Config.XmlLoggingConfiguration.ParseExtensionWithAssembly(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2018-11-27 11:12:18.1054 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-11-27 11:12:18.1252 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2018-11-27 11:12:18.1252 Debug Setting 'UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2018-11-27 11:12:18.1578 Trace Wrapping LevelLayoutRenderer with UppercaseLayoutRendererWrapper
+2018-11-27 11:12:18.1578 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-11-27 11:12:18.1578 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-11-27 11:12:18.1578 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-11-27 11:12:18.1578 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2018-11-27 11:12:18.1578 Trace  Scanning Property Culture '' System.Globalization
+2018-11-27 11:12:18.1674 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2018-11-27 11:12:18.1674 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2018-11-27 11:12:18.1674 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-11-27 11:12:18.1674 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-11-27 11:12:18.1674 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-11-27 11:12:18.1674 Trace Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
+2018-11-27 11:12:18.1674 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-11-27 11:12:18.1674 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2018-11-27 11:12:18.1926 Debug Setting 'FileTarget.name' to 'logfile'
+2018-11-27 11:12:18.1926 Debug Setting 'FileTarget.fileName' to 'C:/Users/User/source/repos/dokio.api/Dokio/Logging/logs/${shortdate}_logfile.txt'
+2018-11-27 11:12:18.1926 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-11-27 11:12:18.1926 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2018-11-27 11:12:18.1926 Debug Setting 'FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2018-11-27 11:12:18.1926 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-11-27 11:12:18.1996 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2018-11-27 11:12:18.1996 Debug Setting 'UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2018-11-27 11:12:18.1996 Trace Wrapping LevelLayoutRenderer with UppercaseLayoutRendererWrapper
+2018-11-27 11:12:18.1996 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-11-27 11:12:18.1996 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-11-27 11:12:18.1996 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-11-27 11:12:18.1996 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2018-11-27 11:12:18.1996 Trace  Scanning Property Culture '' System.Globalization
+2018-11-27 11:12:18.1996 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2018-11-27 11:12:18.1996 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2018-11-27 11:12:18.1996 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-11-27 11:12:18.1996 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-11-27 11:12:18.1996 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-11-27 11:12:18.1996 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2018-11-27 11:12:18.1996 Info Adding target File Target[logfile]
+2018-11-27 11:12:18.1996 Debug Registered target logfile: NLog.Targets.FileTarget
+2018-11-27 11:12:18.1996 Trace ParseRulesElement
+2018-11-27 11:12:18.2199 Info Configured from an XML element in C:\Users\User\source\repos\dokio.api\Dokio\Dokio.api/nlog.config...
+2018-11-27 11:12:18.2199 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2018-11-27 11:12:18.2329 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2018-11-27 11:12:18.2329 Debug --- NLog configuration dump ---
+2018-11-27 11:12:18.2329 Debug Targets:
+2018-11-27 11:12:18.2329 Debug File Target[logfile]
+2018-11-27 11:12:18.2329 Debug Rules:
+2018-11-27 11:12:18.2329 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] appendTo: [ logfile ]
+2018-11-27 11:12:18.2329 Debug --- End of NLog configuration dump ---
+2018-11-27 11:12:18.2460 Trace FindReachableObject<System.Object>:
+2018-11-27 11:12:18.2460 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] appendTo: [ logfile ]'
+2018-11-27 11:12:18.2460 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2018-11-27 11:12:18.2460 Trace  Scanning FileTarget 'File Target[logfile]'
+2018-11-27 11:12:18.2460 Trace   Scanning Property FileName ''C:/Users/User/source/repos/dokio.api/Dokio/Logging/logs/${shortdate}_logfile.txt'' NLog.Layouts
+2018-11-27 11:12:18.2460 Trace   Scanning SimpleLayout ''C:/Users/User/source/repos/dokio.api/Dokio/Logging/logs/${shortdate}_logfile.txt''
+2018-11-27 11:12:18.2460 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-11-27 11:12:18.2460 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-11-27 11:12:18.2460 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2018-11-27 11:12:18.2460 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-11-27 11:12:18.2460 Trace   Scanning Property Layout ''${longdate} ${level:uppercase=true} ${message}'' NLog.Layouts
+2018-11-27 11:12:18.2460 Trace   Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2018-11-27 11:12:18.2460 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-11-27 11:12:18.2460 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2018-11-27 11:12:18.2614 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-11-27 11:12:18.2614 Trace    Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2018-11-27 11:12:18.2614 Trace     Scanning Property Culture '' System.Globalization
+2018-11-27 11:12:18.2614 Trace     Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2018-11-27 11:12:18.2614 Trace     Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2018-11-27 11:12:18.2614 Trace      Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-11-27 11:12:18.2614 Trace      Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-11-27 11:12:18.2614 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-11-27 11:12:18.2614 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2018-11-27 11:12:18.2614 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2018-11-27 11:12:18.2614 Trace   Scanning Property Encoding 'System.Text.UTF8Encoding+UTF8EncodingSealed' System.Text
+2018-11-27 11:12:18.2614 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2018-11-27 11:12:18.2614 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2018-11-27 11:12:18.2767 Trace  Scanning Property Levels 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LogLevel]' System.Collections.ObjectModel
+2018-11-27 11:12:18.2767 Info Found 14 configuration items
+2018-11-27 11:12:18.2767 Trace Initializing Layout Renderer: ${message}
+2018-11-27 11:12:18.2767 Trace Initializing Layout Renderer: ${literal}
+2018-11-27 11:12:18.2767 Trace Initializing Layout Renderer: ${level}
+2018-11-27 11:12:18.2767 Trace Initializing SimpleLayout=Layout Renderer: ${level}
+2018-11-27 11:12:18.2767 Trace FindReachableObject<System.Object>:
+2018-11-27 11:12:18.2767 Trace Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2018-11-27 11:12:18.2767 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-11-27 11:12:18.2767 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-11-27 11:12:18.2767 Trace Initializing Layout Renderer: ${uppercase}
+2018-11-27 11:12:18.2929 Trace Initializing Layout Renderer: ${literal}
+2018-11-27 11:12:18.2929 Trace Initializing Layout Renderer: ${longdate}
+2018-11-27 11:12:18.2929 Trace Initializing '${longdate} ${level:uppercase=true} ${message}'
+2018-11-27 11:12:18.2929 Trace FindReachableObject<System.Object>:
+2018-11-27 11:12:18.2929 Trace Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2018-11-27 11:12:18.2929 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-11-27 11:12:18.2929 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2018-11-27 11:12:18.2929 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-11-27 11:12:18.2929 Trace  Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2018-11-27 11:12:18.2929 Trace   Scanning Property Culture '' System.Globalization
+2018-11-27 11:12:18.2929 Trace   Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2018-11-27 11:12:18.2929 Trace   Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2018-11-27 11:12:18.2929 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-11-27 11:12:18.2929 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-11-27 11:12:18.2929 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-11-27 11:12:18.2929 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2018-11-27 11:12:18.2929 Trace Initializing Layout Renderer: ${literal}
+2018-11-27 11:12:18.2929 Trace Initializing Layout Renderer: ${shortdate}
+2018-11-27 11:12:18.3090 Trace Initializing Layout Renderer: ${literal}
+2018-11-27 11:12:18.3090 Trace Initializing 'C:/Users/User/source/repos/dokio.api/Dokio/Logging/logs/${shortdate}_logfile.txt'
+2018-11-27 11:12:18.3090 Trace FindReachableObject<System.Object>:
+2018-11-27 11:12:18.3090 Trace Scanning SimpleLayout ''C:/Users/User/source/repos/dokio.api/Dokio/Logging/logs/${shortdate}_logfile.txt''
+2018-11-27 11:12:18.3090 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-11-27 11:12:18.3090 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-11-27 11:12:18.3090 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2018-11-27 11:12:18.3090 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-11-27 11:12:18.3090 Trace Initializing File Target[logfile]
+2018-11-27 11:12:18.3090 Trace FindReachableObject<NLog.Layouts.Layout>:
+2018-11-27 11:12:18.3090 Trace Scanning FileTarget 'File Target[logfile]'
+2018-11-27 11:12:18.3090 Trace  Scanning Property FileName ''C:/Users/User/source/repos/dokio.api/Dokio/Logging/logs/${shortdate}_logfile.txt'' NLog.Layouts
+2018-11-27 11:12:18.3090 Trace  Scanning SimpleLayout ''C:/Users/User/source/repos/dokio.api/Dokio/Logging/logs/${shortdate}_logfile.txt''
+2018-11-27 11:12:18.3240 Trace  Scanning Property Layout ''${longdate} ${level:uppercase=true} ${message}'' NLog.Layouts
+2018-11-27 11:12:18.3240 Trace  Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2018-11-27 11:12:18.3240 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2018-11-27 11:12:18.3240 Trace  Scanning Property Encoding 'System.Text.UTF8Encoding+UTF8EncodingSealed' System.Text
+2018-11-27 11:12:18.3240 Trace File Target[logfile] has 2 layouts
+2018-11-27 11:12:18.3240 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.RetryingMultiProcessFileAppender+Factory
+2018-11-27 11:12:18.3398 Debug Watching path 'C:\Users\User\source\repos\dokio.api\Dokio\Dokio.api' filter 'nlog.config' for changes.
+2018-11-27 11:20:27.9729 Debug ScanAssembly('NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2018-11-27 11:20:28.0049 Debug Found assembly location directory: 'C:\Users\User\.nuget\packages\nlog\4.5.10\lib\netstandard2.0' (NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c)
+2018-11-27 11:20:28.0049 Debug Search for auto loading files in location: C:\Users\User\.nuget\packages\nlog\4.5.10\lib\netstandard2.0
+2018-11-27 11:20:28.0158 Debug Found assembly location directory: 'C:\Users\User\source\repos\dokio.api\Dokio\Dokio.api\bin\Debug\netcoreapp2.1' (Dokio.api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)
+2018-11-27 11:20:28.0158 Debug Search for auto loading files in location: C:\Users\User\source\repos\dokio.api\Dokio\Dokio.api\bin\Debug\netcoreapp2.1
+2018-11-27 11:20:28.0158 Debug Auto loading based on AppDomain-BaseDirectory found location: C:\Users\User\source\repos\dokio.api\Dokio\Dokio.api\bin\Debug\netcoreapp2.1
+2018-11-27 11:20:28.0158 Debug Search for auto loading files in location: C:\Users\User\source\repos\dokio.api\Dokio\Dokio.api\bin\Debug\netcoreapp2.1
+2018-11-27 11:20:28.0158 Debug Start auto loading, location: C:\Users\User\.nuget\packages\nlog\4.5.10\lib\netstandard2.0
+2018-11-27 11:20:28.0158 Trace Assembly 'Microsoft.Extensions.Logging, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60' will be hidden in callsite stacktrace
+2018-11-27 11:20:28.0158 Trace Assembly 'Microsoft.Extensions.Logging.Abstractions, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60' will be hidden in callsite stacktrace
+2018-11-27 11:20:28.0158 Debug Auto loading done
+2018-11-27 11:20:28.0158 Info Message Template Auto Format enabled
+2018-11-27 11:20:28.0346 Info Loading assembly: NLog.Extended
+2018-11-27 11:20:28.0616 Error Error loading extensions. Exception: System.IO.FileNotFoundException: Could not load file or assembly 'NLog.Extended, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'NLog.Extended, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, StackCrawlMark& stackMark, IntPtr pPrivHostBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, StackCrawlMark& stackMark)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Internal.AssemblyHelpers.LoadFromName(String assemblyName)
+   at NLog.Config.XmlLoggingConfiguration.ParseExtensionWithAssembly(String assemblyName, String prefix)
+
+
+2018-11-27 11:20:28.0616 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: NLog.Extended ---> System.IO.FileNotFoundException: Could not load file or assembly 'NLog.Extended, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, IntPtr ptrLoadContextBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, StackCrawlMark& stackMark, IntPtr pPrivHostBinder)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, StackCrawlMark& stackMark)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Internal.AssemblyHelpers.LoadFromName(String assemblyName)
+   at NLog.Config.XmlLoggingConfiguration.ParseExtensionWithAssembly(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2018-11-27 11:20:28.0796 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-11-27 11:20:28.0796 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2018-11-27 11:20:28.0895 Debug Setting 'UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2018-11-27 11:20:28.0895 Trace Wrapping LevelLayoutRenderer with UppercaseLayoutRendererWrapper
+2018-11-27 11:20:28.0895 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-11-27 11:20:28.0895 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-11-27 11:20:28.0895 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-11-27 11:20:28.0895 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2018-11-27 11:20:28.1048 Trace  Scanning Property Culture '' System.Globalization
+2018-11-27 11:20:28.1048 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2018-11-27 11:20:28.1048 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2018-11-27 11:20:28.1048 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-11-27 11:20:28.1048 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-11-27 11:20:28.1048 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-11-27 11:20:28.1048 Trace Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
+2018-11-27 11:20:28.1048 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-11-27 11:20:28.1048 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2018-11-27 11:20:28.1238 Debug Setting 'FileTarget.name' to 'logfile'
+2018-11-27 11:20:28.1238 Debug Setting 'FileTarget.fileName' to 'C:/Users/User/source/repos/dokio.api/Dokio/Logging/logs/${shortdate}_logfile.txt'
+2018-11-27 11:20:28.1238 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-11-27 11:20:28.1238 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2018-11-27 11:20:28.1238 Debug Setting 'FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2018-11-27 11:20:28.1238 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-11-27 11:20:28.1238 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2018-11-27 11:20:28.1238 Debug Setting 'UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2018-11-27 11:20:28.1238 Trace Wrapping LevelLayoutRenderer with UppercaseLayoutRendererWrapper
+2018-11-27 11:20:28.1238 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-11-27 11:20:28.1238 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-11-27 11:20:28.1359 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-11-27 11:20:28.1359 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2018-11-27 11:20:28.1359 Trace  Scanning Property Culture '' System.Globalization
+2018-11-27 11:20:28.1359 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2018-11-27 11:20:28.1359 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2018-11-27 11:20:28.1359 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-11-27 11:20:28.1359 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-11-27 11:20:28.1359 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2018-11-27 11:20:28.1359 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2018-11-27 11:20:28.1359 Info Adding target File Target[logfile]
+2018-11-27 11:20:28.1359 Debug Registered target logfile: NLog.Targets.FileTarget
+2018-11-27 11:20:28.1359 Trace ParseRulesElement
+2018-11-27 11:20:28.1561 Info Configured from an XML element in C:\Users\User\source\repos\dokio.api\Dokio\Dokio.api/nlog.config...
+2018-11-27 11:20:28.1561 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2018-11-27 11:20:28.1708 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2018-11-27 11:20:28.1708 Debug --- NLog configuration dump ---
+2018-11-27 11:20:28.1708 Debug Targets:
+2018-11-27 11:20:28.1708 Debug File Target[logfile]
+2018-11-27 11:20:28.1708 Debug Rules:
+2018-11-27 11:20:28.1708 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] appendTo: [ logfile ]
+2018-11-27 11:20:28.1708 Debug --- End of NLog configuration dump ---
+2018-11-27 11:20:28.1708 Trace FindReachableObject<System.Object>:
+2018-11-27 11:20:28.1708 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] appendTo: [ logfile ]'
+2018-11-27 11:20:28.1827 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2018-11-27 11:20:28.1827 Trace  Scanning FileTarget 'File Target[logfile]'
+2018-11-27 11:20:28.1827 Trace   Scanning Property FileName ''C:/Users/User/source/repos/dokio.api/Dokio/Logging/logs/${shortdate}_logfile.txt'' NLog.Layouts
+2018-11-27 11:20:28.1827 Trace   Scanning SimpleLayout ''C:/Users/User/source/repos/dokio.api/Dokio/Logging/logs/${shortdate}_logfile.txt''
+2018-11-27 11:20:28.1827 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-11-27 11:20:28.1827 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-11-27 11:20:28.1827 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2018-11-27 11:20:28.1827 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-11-27 11:20:28.1827 Trace   Scanning Property Layout ''${longdate} ${level:uppercase=true} ${message}'' NLog.Layouts
+2018-11-27 11:20:28.1827 Trace   Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2018-11-27 11:20:28.1827 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-11-27 11:20:28.1827 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2018-11-27 11:20:28.1827 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-11-27 11:20:28.1827 Trace    Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2018-11-27 11:20:28.1827 Trace     Scanning Property Culture '' System.Globalization
+2018-11-27 11:20:28.1827 Trace     Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2018-11-27 11:20:28.1827 Trace     Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2018-11-27 11:20:28.1827 Trace      Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-11-27 11:20:28.1827 Trace      Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-11-27 11:20:28.1827 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-11-27 11:20:28.1827 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2018-11-27 11:20:28.1827 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2018-11-27 11:20:28.1827 Trace   Scanning Property Encoding 'System.Text.UTF8Encoding+UTF8EncodingSealed' System.Text
+2018-11-27 11:20:28.1996 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2018-11-27 11:20:28.1996 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2018-11-27 11:20:28.1996 Trace  Scanning Property Levels 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LogLevel]' System.Collections.ObjectModel
+2018-11-27 11:20:28.1996 Info Found 14 configuration items
+2018-11-27 11:20:28.1996 Trace Initializing Layout Renderer: ${message}
+2018-11-27 11:20:28.1996 Trace Initializing Layout Renderer: ${literal}
+2018-11-27 11:20:28.1996 Trace Initializing Layout Renderer: ${level}
+2018-11-27 11:20:28.1996 Trace Initializing SimpleLayout=Layout Renderer: ${level}
+2018-11-27 11:20:28.1996 Trace FindReachableObject<System.Object>:
+2018-11-27 11:20:28.1996 Trace Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2018-11-27 11:20:28.1996 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-11-27 11:20:28.1996 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-11-27 11:20:28.2176 Trace Initializing Layout Renderer: ${uppercase}
+2018-11-27 11:20:28.2176 Trace Initializing Layout Renderer: ${literal}
+2018-11-27 11:20:28.2176 Trace Initializing Layout Renderer: ${longdate}
+2018-11-27 11:20:28.2176 Trace Initializing '${longdate} ${level:uppercase=true} ${message}'
+2018-11-27 11:20:28.2176 Trace FindReachableObject<System.Object>:
+2018-11-27 11:20:28.2176 Trace Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2018-11-27 11:20:28.2176 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-11-27 11:20:28.2176 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2018-11-27 11:20:28.2176 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-11-27 11:20:28.2176 Trace  Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2018-11-27 11:20:28.2176 Trace   Scanning Property Culture '' System.Globalization
+2018-11-27 11:20:28.2176 Trace   Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2018-11-27 11:20:28.2176 Trace   Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2018-11-27 11:20:28.2176 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-11-27 11:20:28.2176 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2018-11-27 11:20:28.2176 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-11-27 11:20:28.2176 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2018-11-27 11:20:28.2176 Trace Initializing Layout Renderer: ${literal}
+2018-11-27 11:20:28.2296 Trace Initializing Layout Renderer: ${shortdate}
+2018-11-27 11:20:28.2296 Trace Initializing Layout Renderer: ${literal}
+2018-11-27 11:20:28.2296 Trace Initializing 'C:/Users/User/source/repos/dokio.api/Dokio/Logging/logs/${shortdate}_logfile.txt'
+2018-11-27 11:20:28.2296 Trace FindReachableObject<System.Object>:
+2018-11-27 11:20:28.2296 Trace Scanning SimpleLayout ''C:/Users/User/source/repos/dokio.api/Dokio/Logging/logs/${shortdate}_logfile.txt''
+2018-11-27 11:20:28.2296 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2018-11-27 11:20:28.2296 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-11-27 11:20:28.2296 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2018-11-27 11:20:28.2296 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2018-11-27 11:20:28.2296 Trace Initializing File Target[logfile]
+2018-11-27 11:20:28.2296 Trace FindReachableObject<NLog.Layouts.Layout>:
+2018-11-27 11:20:28.2296 Trace Scanning FileTarget 'File Target[logfile]'
+2018-11-27 11:20:28.2296 Trace  Scanning Property FileName ''C:/Users/User/source/repos/dokio.api/Dokio/Logging/logs/${shortdate}_logfile.txt'' NLog.Layouts
+2018-11-27 11:20:28.2296 Trace  Scanning SimpleLayout ''C:/Users/User/source/repos/dokio.api/Dokio/Logging/logs/${shortdate}_logfile.txt''
+2018-11-27 11:20:28.2296 Trace  Scanning Property Layout ''${longdate} ${level:uppercase=true} ${message}'' NLog.Layouts
+2018-11-27 11:20:28.2296 Trace  Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2018-11-27 11:20:28.2296 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2018-11-27 11:20:28.2296 Trace  Scanning Property Encoding 'System.Text.UTF8Encoding+UTF8EncodingSealed' System.Text
+2018-11-27 11:20:28.2296 Trace File Target[logfile] has 2 layouts
+2018-11-27 11:20:28.2466 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.RetryingMultiProcessFileAppender+Factory
+2018-11-27 11:20:28.2466 Debug Watching path 'C:\Users\User\source\repos\dokio.api\Dokio\Dokio.api' filter 'nlog.config' for changes.
+2018-11-27 11:20:29.4005 Debug Targets for Dokio.LoggerService.LoggerManager by level:
+2018-11-27 11:20:29.4017 Debug Trace =>
+2018-11-27 11:20:29.4017 Debug Debug => logfile
+2018-11-27 11:20:29.4017 Debug Info => logfile
+2018-11-27 11:20:29.4017 Debug Warn => logfile
+2018-11-27 11:20:29.4017 Debug Error => logfile
+2018-11-27 11:20:29.4017 Debug Fatal => logfile
+2018-11-27 11:20:29.4335 Debug FileTarget(Name=logfile): Process file 'C:/Users/User/source/repos/dokio.api/Dokio/Logging/logs/2018-11-27_logfile.txt' on startup
+2018-11-27 11:20:29.4335 Debug Creating file appender: C:/Users/User/source/repos/dokio.api/Dokio/Logging/logs/2018-11-27_logfile.txt
+2018-11-27 11:20:29.4335 Trace Opening C:/Users/User/source/repos/dokio.api/Dokio/Logging/logs/2018-11-27_logfile.txt with allowFileSharedWriting=False
