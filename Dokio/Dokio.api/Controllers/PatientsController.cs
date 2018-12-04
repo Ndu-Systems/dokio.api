@@ -45,7 +45,7 @@ namespace Dokio.api.Controllers
         // GET api/patients/1
 
         [HttpGet("{id}", Name ="PatientById")]
-        public IActionResult GetPatientById(int id)
+        public IActionResult GetPatientById(Guid id)
         {
             try
             {
@@ -95,7 +95,7 @@ namespace Dokio.api.Controllers
         }
 
         [HttpPut("{id}")]
-        public IActionResult UpdatePatient(int id, [FromBody]Patient patient)
+        public IActionResult UpdatePatient(Guid id, [FromBody]Patient patient)
         {
             try
             {

@@ -22,6 +22,7 @@ namespace Dokio.Repository.Patients
             model.CreateDate = DateTime.Now;
             model.ModifyDate = DateTime.Now;
             model.GlobalKey =  Guid.NewGuid().ToString();
+            model.Id = Guid.NewGuid();
             try
             {
                 Create(model);
@@ -42,7 +43,7 @@ namespace Dokio.Repository.Patients
             return FindAll().Where(p => p.StatusId == 1);
         }
 
-        public Patient GetPatientById(int id)
+        public Patient GetPatientById(Guid id)
         {
             return FindByCondition(patient => patient.Id.Equals(id))
                      .DefaultIfEmpty(new Patient())

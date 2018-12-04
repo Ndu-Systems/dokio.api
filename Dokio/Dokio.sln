@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2016
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dokio.api", "Dokio.api\Dokio.api.csproj", "{CDC9DB02-4730-4677-BEF3-15B4EBA91CCD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dokio.api", "Dokio.api\Dokio.api.csproj", "{CDC9DB02-4730-4677-BEF3-15B4EBA91CCD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dokio.Contracts", "Dokio.Contracts\Dokio.Contracts.csproj", "{ABBA14CF-5F68-4788-BD61-F3424E1B091D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dokio.Contracts", "Dokio.Contracts\Dokio.Contracts.csproj", "{ABBA14CF-5F68-4788-BD61-F3424E1B091D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dokio.LoggerService", "Dokio.LoggerService\Dokio.LoggerService.csproj", "{DB988B2C-029E-4F66-BAA0-831E5E60CC2C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dokio.LoggerService", "Dokio.LoggerService\Dokio.LoggerService.csproj", "{DB988B2C-029E-4F66-BAA0-831E5E60CC2C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dokio.Repository", "Dokio.Repository\Dokio.Repository.csproj", "{F58A32F7-F7BC-413E-AD29-862EA0F9415E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dokio.Repository", "Dokio.Repository\Dokio.Repository.csproj", "{F58A32F7-F7BC-413E-AD29-862EA0F9415E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dokio.Entities", "Dokio.Entities\Dokio.Entities.csproj", "{D57E48F5-56CA-4F1F-8855-C341E18CB8B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dokio.Entities", "Dokio.Entities\Dokio.Entities.csproj", "{D57E48F5-56CA-4F1F-8855-C341E18CB8B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dokio.Tests", "Dokio.Tests\Dokio.Tests.csproj", "{977BDA92-E4B2-431F-90BE-F5AB5CF03755}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{D57E48F5-56CA-4F1F-8855-C341E18CB8B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D57E48F5-56CA-4F1F-8855-C341E18CB8B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D57E48F5-56CA-4F1F-8855-C341E18CB8B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{977BDA92-E4B2-431F-90BE-F5AB5CF03755}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{977BDA92-E4B2-431F-90BE-F5AB5CF03755}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{977BDA92-E4B2-431F-90BE-F5AB5CF03755}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{977BDA92-E4B2-431F-90BE-F5AB5CF03755}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

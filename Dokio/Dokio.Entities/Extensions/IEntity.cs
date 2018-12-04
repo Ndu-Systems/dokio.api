@@ -6,6 +6,6 @@ namespace Dokio.Entities.Extensions
 {
     public interface IEntity
     {
-        int Id { get; set; }
+        Guid Id { get; set; }
     }
 }

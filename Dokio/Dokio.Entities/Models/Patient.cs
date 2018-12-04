@@ -12,7 +12,7 @@ namespace Dokio.Entities.Models
     {
         [Key]
         [Column("PatientId")]
-        public int Id { get; set; }
+        public Guid Id { get; set; }
         public string FirstName { get; set; }
         public string Surname { get; set; }
         public string IdNumber { get; set; }
@@ -31,6 +31,5 @@ namespace Dokio.Entities.Models
         public int ModifyUserId { get; set; }
         public DateTime ModifyDate { get; set; }
         public int StatusId { get; set; }
-      
-    }
+     }
 }

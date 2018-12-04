@@ -10,7 +10,7 @@ namespace Dokio.Contracts.IPatient
     {
         IEnumerable<Patient> GetAllPatients();
 
-        Patient GetPatientById(int id);
+        Patient GetPatientById(Guid id);
 
         bool CreatePatient(Patient model);
 
