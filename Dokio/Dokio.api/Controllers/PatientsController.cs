@@ -30,7 +30,7 @@ namespace Dokio.api.Controllers
         {
             try
             {
-                var patients = _repoWrapper.Patient.GetAllPatients();
+                var patients = _repoWrapper.Patient.GetAllPatients().ToArray();
                 _logger.LogInfo($"Returned all patients from database at: {DateTime.Now}");
                 return Ok(patients);
             }

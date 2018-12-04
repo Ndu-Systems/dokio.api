@@ -16,14 +16,7 @@ namespace Dokio.Tests.Patients.FakeService
         
         public PatientRepositoryFake(RepositoryContext context) : base(context)
         {
-            _pateints = new List<Patient>()
-            {
-                new Patient() {Id = new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd9c200"), FirstName="FakeJon", Surname = "FakeDoe", Email = "FakeJon@mail.com", StatusId = 1},
-                new Patient() {Id = new Guid("2584bafa-1cce-4e81-9009-1611bab71bfc"), FirstName="FakeKing", Surname = "FakeJames", Email = "FakeKing@mail.com", StatusId = 1},
-                new Patient() {Id = new Guid("3a097051-b6b0-474f-aeda-ac8fe800b3eb"), FirstName="FakeBen", Surname = "FakeRich", Email = "FakeBen@mail.com", StatusId = 2},
-                new Patient() {Id = new Guid("ee7b83be-5257-4716-8290-b082fdab663b"), FirstName="FakeGin", Surname = "FakeKazama", Email = "FakeGin@mail.com", StatusId = 1},
-
-            };
+           
         }
         public bool CreatePatient(Patient model)
         {
