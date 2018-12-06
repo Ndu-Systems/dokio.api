@@ -177,6 +177,36 @@ namespace Dokio.Tests.Patients
             Assert.Equal("marry@mail.com", patientResult.Email);
         }       
 
+        [Fact]
+        public void CreatePatient_WhenExecuted_MustCreateAPatient()
+        {
+            var helper = new PatientHelper();
+            //Arrange 
+            IQueryable<Patient> patients = helper.ListOfPatients();
+            Patient patient = helper.CreatePatient();
+            var mockSet = new Mock<DbSet<Patient>>();
+            mockSet.As<IQueryable<Patient>>().Setup(p => p.Provider).Returns(patients.Provider);
+            mockSet.As<IQueryable<Patient>>().Setup(p => p.Expression).Returns(patients.Expression);
+            mockSet.As<IQueryable<Patient>>().Setup(p => p.ElementType).Returns(patients.ElementType);
+
+            var mockContext = new Mock<RepositoryContext>();
+            mockSet.As<IQueryable<Patient>>().Setup(p => p.GetEnumerator()).Returns(patients.GetEnumerator());
+            mockContext.Setup(p => p.Patients).Returns(mockSet.Object);
+
+            var mockLoggerService = new Mock<ILoggerManager>();
+            mockLoggerService.Setup(l => l.LogInfo("This is a test"));
+            var mockRepository = new Mock<IPatientRepository>();
+            mockRepository.Setup(mr => mr.CreatePatient(patient)).Returns(true);
+            var mockWrapper = new Mock<IRepositoryWrapper>();
+            mockWrapper.Setup(mw => mw.Patient).Returns(mockRepository.Object);
+            var controller = new PatientsController(mockLoggerService.Object, mockWrapper.Object);
+
+            //Act
+            var result = controller.CreatePatient(patient) as CreatedAtRouteResult;
+            var item = result.Value as Patient;
+
+            Assert.IsType<Patient>(item);
+        }
 
     }
 }

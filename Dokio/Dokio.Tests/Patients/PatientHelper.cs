@@ -99,5 +99,31 @@ namespace Dokio.Tests.Patients
                 StatusId = 1
             };
         }
+
+        public Patient CreatePatient()
+        {
+            return new Patient()
+            {
+                Id = new Guid("03a98cf8-c141-47f6-b490-0ddbb4074add"),
+                FirstName = "Kenneth",
+                Surname = "Brown",
+                Email = "KennethB@mail.com",
+                IdNumber = "0000000000000",
+                DOB = "000000",
+                Gender = "Male",
+                AddressLine1 = "1",
+                AddressLine2 = "Rail 2",
+                AddressLine3 = "5005",
+                City = "M-City",
+                PostCode = "1234568",
+                GlobalKey = "ab2bd800",
+                Cellphone = "0587456331",
+                CreateUserId = 1,
+                CreateDate = DateTime.Now.Date,
+                ModifyUserId = 1,
+                ModifyDate = DateTime.Now.Date,
+                StatusId = 1
+            };
+        }
     }
 }
