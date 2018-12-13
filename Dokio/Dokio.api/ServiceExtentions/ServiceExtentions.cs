@@ -43,14 +43,26 @@ namespace Dokio.api.ServiceExtentions
 
         public static void ConfigureMySqlContext (this IServiceCollection services, IConfiguration config)
         {
-            var connectionString = config["mysqlconnection:connectionString-Dev"]; //Dev environment
-            //var connectionString = config["mysqlconnection:connectionString-Prod"]; //Prod environment
-            services.AddDbContext<RepositoryContext>(o => o.UseMySql(connectionString));
+           string connectionString="";
+           connectionString = connectionString.IsDevelopment(true, config);
+           services.AddDbContext<RepositoryContext>(o => o.UseMySql(connectionString));
         }
 
         public static void ConfigureRepositoryWrapper(this IServiceCollection services)
         {
             services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
         }
+        public static string IsDevelopment(this string connectionString, bool check,  IConfiguration config)
+        {
+             
+            if (check == true)
+                connectionString = config["mysqlconnection:connectionString-Dev"];
+            else
+                connectionString = config["mysqlconnection:connectionString-Prod"];
+
+            return connectionString;
+        }
     }
+
+  
 }

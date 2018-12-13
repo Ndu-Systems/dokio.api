@@ -6,3 +6,4 @@ C:\Users\User\source\repos\dokio.api\Dokio\Dokio.Entities\obj\Debug\netcoreapp2.
 C:\Users\User\source\repos\dokio.api\Dokio\Dokio.Entities\obj\Debug\netcoreapp2.1\Dokio.Entities.AssemblyInfo.cs
 C:\Users\User\source\repos\dokio.api\Dokio\Dokio.Entities\obj\Debug\netcoreapp2.1\Dokio.Entities.dll
 C:\Users\User\source\repos\dokio.api\Dokio\Dokio.Entities\obj\Debug\netcoreapp2.1\Dokio.Entities.pdb
+C:\Users\User\source\repos\dokio.api\Dokio\Dokio.Entities\obj\Debug\netcoreapp2.1\Dokio.Entities.csprojAssemblyReference.cache
