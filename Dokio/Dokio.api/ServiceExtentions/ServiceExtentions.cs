@@ -44,7 +44,7 @@ namespace Dokio.api.ServiceExtentions
         public static void ConfigureMySqlContext (this IServiceCollection services, IConfiguration config)
         {
            string connectionString="";
-           connectionString = connectionString.IsDevelopment(true, config);
+           connectionString = connectionString.IsDevelopment(false, config);
            services.AddDbContext<RepositoryContext>(o => o.UseMySql(connectionString));
         }
 
