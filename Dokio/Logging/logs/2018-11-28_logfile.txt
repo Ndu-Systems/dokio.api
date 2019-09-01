@@ -1,5 +1,0 @@
-2018-11-28 14:57:10.6374 INFO Returned all patients from database at: 2018/11/28 2:57:10 PM
-2018-11-28 14:57:14.3033 INFO Returned all patients from database at: 2018/11/28 2:57:14 PM
-2018-11-28 21:59:49.0796 INFO Returned all patients from database at: 2018/11/28 9:59:49 PM
-2018-11-28 22:02:42.8213 INFO Returned all patients from database at: 2018/11/28 10:02:42 PM
-2018-11-28 22:10:25.3343 INFO Returned Patient with id : 2

@@ -1,5 +1,0 @@
-2018-12-04 08:19:01.0420 INFO Returned all patients from database at: 2018/12/04 8:19:00 AM
-2018-12-04 08:19:28.3492 INFO Returned Patient with id : 8c62d729-f4d3-11e8-bc75-f48e38e878a3
-2018-12-04 08:38:48.8055 INFO Returned all patients from database at: 2018/12/04 8:38:48 AM
-2018-12-04 16:14:02.5104 INFO Returned all patients from database at: 2018/12/04 4:14:02 PM
-2018-12-04 16:15:00.0678 INFO Returned all patients from database at: 2018/12/04 4:15:00 PM

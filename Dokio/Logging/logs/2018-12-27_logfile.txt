@@ -1,4 +1,0 @@
-2018-12-27 14:28:37.7965 INFO Returned all patients from database at: 2018/12/27 2:28:37 PM
-2018-12-27 14:29:07.9366 INFO Returned Patient with id : ceb9d536-f4d3-11e8-bc75-f48e38e878a3
-2018-12-27 14:31:00.1870 INFO Returned all patients from database at: 2018/12/27 2:31:00 PM
-2018-12-27 14:31:21.6348 INFO Returned Patient with id : ceb9d536-f4d3-11e8-bc75-f48e38e878a3
